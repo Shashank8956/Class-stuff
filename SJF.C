@@ -12,7 +12,7 @@ void main()
    float tempTAT, tempWT;
    struct pcb p[5];
    clrscr();
-   printf("Enter the process no, arival time, burst time and priority: \n");
+   printf("Enter the process no, arival time, burst time: \n");
    for(i=0;i<5;i++)
      {
 	scanf("%d%d%d", &p[i].pno, &p[i].at, &p[i].bt);
@@ -29,7 +29,7 @@ void main()
    for(i=2;i<5;i++)
      { for(j=1;j<i;j++)
 	 {
-	    if(p[i].bt > p[j].bt)
+	    if(p[i].bt < p[j].bt)
 	      {
 		 temp=p[i].pno;
 		 p[i].pno=p[j].pno;
