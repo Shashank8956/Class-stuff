@@ -33,3 +33,15 @@ CREATE Table Facts(
 	Company_ID int references Companies(id),
 	Rate_ID int references Rates(id),
 	TotalFilghtTime int);
+
+INSERT INTO Pilots VALUES (101, "John Wick", "Jr. Pilot", 01/12/1989);
+INSERT INTO Pilots VALUES (102, "Goro", "Jr. Pilot", 11/12/1990);
+INSERT INTO Pilots VALUES (103, "Sao Kahn", "Officer", 10/11/1987);
+
+INSERT INTO Flights VALUES (201, "Betul", "Darbhanga", 01/12/2014);
+INSERT INTO Flights VALUES (202, "Wasseypur", "Wardha", 07/12/2016);
+INSERT INTO Flights VALUES (203, "Yavatmal", "New York", 11/09/2016);
+
+INSERT INTO Planes VALUES (301, "BS784", 01/12/2014, 65);
+INSERT INTO Planes VALUES (302, "WX234", 07/12/2016, 43);
+INSERT INTO Planes VALUES (303, "TR976", 11/09/2016, 54);
