@@ -25,3 +25,11 @@ CREATE Table Rates(
 	ID int primary key,
 	ClassType Varchar(20),
 	Price int)
+
+CREATE Table Facts(
+	Pilot_ID int references Pilots(id),
+	Flight_ID int references Flights(id),
+	Plane_ID int references Planes(id),
+	Company_ID int references Companies(id),
+	Rate_ID int references Rates(id),
+	TotalFilghtTime int);
