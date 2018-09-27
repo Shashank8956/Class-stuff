@@ -1,0 +1,27 @@
+CREATE Table Pilots(
+	ID int primary key,
+	Name Varchar(25),
+	title varchar(15),
+	DOB date)
+
+CREATE Table Flights(
+	ID int primary key,
+	Dep Varchar(20),
+	Arv varchar(20),
+	Dt date)
+
+CREATE Table Planes(
+	ID int primary key,
+	Model Varchar(20),
+	BuiltDate Date,
+	Seats int)
+
+CREATE Table Companies(
+	ID int primary key,
+	Name Varchar(20),
+	Country Varchar(20))
+
+CREATE Table Rates(
+	ID int primary key,
+	ClassType Varchar(20),
+	Price int)
