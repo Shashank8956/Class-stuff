@@ -34,38 +34,38 @@ CREATE Table Facts(
 	Rate_ID int references Rates(id),
 	TotalFilghtTime int);
 
-INSERT INTO Pilots VALUES (101, "John Wick", "Jr. Pilot", 01/12/1989);
-INSERT INTO Pilots VALUES (102, "Goro", "First Officer", 11/12/1990);
-INSERT INTO Pilots VALUES (103, "Sao Kahn", "Sr. Flight Engineer", 10/11/1987);
-INSERT INTO Pilots VALUES (104, "James H. Doolittle", "Captain", 01/12/1989);
-INSERT INTO Pilots VALUES (105, "Noel Wien", "Jr. Pilot", 11/12/1990);
-INSERT INTO Pilots VALUES (106, "Robert A. Hoover", "Second Officer", 10/11/1987);
-INSERT INTO Pilots VALUES (107, "Erich Hartmann", "Third Officer", 01/12/1989);
-INSERT INTO Pilots VALUES (108, "Charles E. Yeager", "Flight Engineer ", 11/12/1990);
-INSERT INTO Pilots VALUES (109, "Scott Crossfield", "Officer", 10/11/1987);
-INSERT INTO Pilots VALUES (110, "Anthony W. LeVier", "Navigator", 01/12/1989);
+INSERT INTO Pilots VALUES (101, "John Wick", "Jr. Pilot", 01-12-1989);
+INSERT INTO Pilots VALUES (102, "Goro", "First Officer", 11-12-1990);
+INSERT INTO Pilots VALUES (103, "Sao Kahn", "Sr. Flight Engineer", 10-11-1987);
+INSERT INTO Pilots VALUES (104, "James H. Doolittle", "Captain", 01-12-1989);
+INSERT INTO Pilots VALUES (105, "Noel Wien", "Jr. Pilot", 11-12-1990);
+INSERT INTO Pilots VALUES (106, "Robert A. Hoover", "Second Officer", 10-11-1987);
+INSERT INTO Pilots VALUES (107, "Erich Hartmann", "Third Officer", 01-12-1989);
+INSERT INTO Pilots VALUES (108, "Charles E. Yeager", "Flight Engineer ", 11-12-1990);
+INSERT INTO Pilots VALUES (109, "Scott Crossfield", "Officer", 10-11-1987);
+INSERT INTO Pilots VALUES (110, "Anthony W. LeVier", "Navigator", 01-12-1989);
 
-INSERT INTO Flights VALUES (201, "Betul", "Darbhanga", 01/12/2014);
-INSERT INTO Flights VALUES (202, "Wasseypur", "Wardha", 07/12/2016);
-INSERT INTO Flights VALUES (203, "Yavatmal", "New York", 11/09/2016);
-INSERT INTO Flights VALUES (204, "Betul", "Darbhanga", 01/12/2014);
-INSERT INTO Flights VALUES (205, "Wasseypur", "Wardha", 07/12/2016);
-INSERT INTO Flights VALUES (206, "Yavatmal", "New York", 11/09/2016);
-INSERT INTO Flights VALUES (207, "Betul", "Darbhanga", 01/12/2014);
-INSERT INTO Flights VALUES (208, "Wasseypur", "Wardha", 07/12/2016);
-INSERT INTO Flights VALUES (209, "Yavatmal", "New York", 11/09/2016);
-INSERT INTO Flights VALUES (210, "Betul", "Darbhanga", 01/12/2014);
+INSERT INTO Flights VALUES (201, "Pune", "New York", 01-12-2014);
+INSERT INTO Flights VALUES (202, "Mumbai", "Dubai", 07-12-2016);
+INSERT INTO Flights VALUES (203, "Dubai", "New York", 11-09-2016);
+INSERT INTO Flights VALUES (204, "Sydney", "London", 01-12-2014);
+INSERT INTO Flights VALUES (205, "Munich", "Berlin", 07-12-2016);
+INSERT INTO Flights VALUES (206, "Zurich", "Vladivostok", 11-09-2016);
+INSERT INTO Flights VALUES (207, "Brussels", "Paris", 01-12-2014);
+INSERT INTO Flights VALUES (208, "LA", "Hawaii", 07-12-2016);
+INSERT INTO Flights VALUES (209, "Madagascar", "Delhi", 11-09-2016);
+INSERT INTO Flights VALUES (210, "Amsterdam", "Toronto", 01-12-2014);
 
-INSERT INTO Planes VALUES (301, "BS784", 01/12/2014, 65);
-INSERT INTO Planes VALUES (302, "WX234", 07/08/2016, 43);
-INSERT INTO Planes VALUES (303, "TR976", 11/09/2016, 54);
-INSERT INTO Planes VALUES (304, "DF32X", 21/11/2012, 96);
-INSERT INTO Planes VALUES (305, "RE865", 13/01/2015, 62);
-INSERT INTO Planes VALUES (306, "GL976", 18/06/2016, 53);
-INSERT INTO Planes VALUES (307, "BS7Y4", 30/10/2017, 72);
-INSERT INTO Planes VALUES (308, "RT234", 06/08/2013, 81);
-INSERT INTO Planes VALUES (309, "TX976", 23/03/2012, 66);
-INSERT INTO Planes VALUES (310, "SE724", 14/05/2014, 79);
+INSERT INTO Planes VALUES (301, "BS784", 01-12-2014, 65);
+INSERT INTO Planes VALUES (302, "WX234", 07-08-2016, 43);
+INSERT INTO Planes VALUES (303, "TR976", 11-09-2016, 54);
+INSERT INTO Planes VALUES (304, "DF32X", 21-11-2012, 96);
+INSERT INTO Planes VALUES (305, "RE865", 13-01-2015, 62);
+INSERT INTO Planes VALUES (306, "GL976", 18-06-2016, 53);
+INSERT INTO Planes VALUES (307, "BS7Y4", 30-10-2017, 72);
+INSERT INTO Planes VALUES (308, "RT234", 06-08-2013, 81);
+INSERT INTO Planes VALUES (309, "TX976", 23-03-2012, 66);
+INSERT INTO Planes VALUES (310, "SE724", 14-05-2014, 79);
 
 INSERT INTO Companies VALUES (401, "Singapore Airlines", 113);
 INSERT INTO Companies VALUES (402, "Qatar Airways", 143);
@@ -78,10 +78,10 @@ INSERT INTO Companies VALUES (408, "Hainan Airlines", 165);
 INSERT INTO Companies VALUES (409, "Garuda Indonesia", 177);
 INSERT INTO Companies VALUES (410, "Thai Airways", 123);
 
-INSERT INTO Rates VALUES (501, "Economy", 01/12/2014, 28000);
-INSERT INTO Rates VALUES (502, "First Class", 07/12/2016, 86000);
-INSERT INTO Rates VALUES (503, "Business", 11/09/2016, 65000);
-INSERT INTO Rates VALUES (504, "Premium Economy", 01/12/2014, 34000);
+INSERT INTO Rates VALUES (501, "Economy", 28000);
+INSERT INTO Rates VALUES (502, "First Class", 86000);
+INSERT INTO Rates VALUES (503, "Business", 65000);
+INSERT INTO Rates VALUES (504, "Premium Economy", 34000);
 
 INSERT INTO Facts VALUES (101,203,310,406,501,2687);
 INSERT INTO Facts VALUES (102,204,301,405,502,2645);
@@ -95,3 +95,19 @@ INSERT INTO Facts VALUES (109,205,305,406,501,2674);
 INSERT INTO Facts VALUES (110,209,306,402,503,3561);
 INSERT INTO Facts VALUES (103,210,307,410,504,2594);
 INSERT INTO Facts VALUES (102,203,308,401,502,2976);
+
+SELECT
+	P.Brand,
+	S.Country AS Countries,
+	SUM(F.Units_Sold)
+
+FROM Fact_Sales F
+INNER JOIN Dim_Date D    ON (F.Date_Id = D.Id)
+INNER JOIN Dim_Store S   ON (F.Store_Id = S.Id)
+INNER JOIN Dim_Product P ON (F.Product_Id = P.Id)
+
+WHERE D.Year = 1997 AND  P.Product_Category = 'tv'
+
+GROUP BY
+	P.Brand,
+	S.Country
