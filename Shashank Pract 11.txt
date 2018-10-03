@@ -1,19 +1,16 @@
 CREATE Table Pilots(
 	ID int primary key,
 	Name Varchar(25),
-	title varchar(15)
-	DOB Date)
+	title varchar(15))
 
 CREATE Table Flights(
 	ID int primary key,
 	Dep Varchar(20),
-	Arv varchar(20),
-	Dt date)
+	Arv varchar(20))
 
 CREATE Table Planes(
 	ID int primary key,
 	Model Varchar(20),
-	BuiltDate Date,
 	Seats int)
 
 CREATE Table Companies(
