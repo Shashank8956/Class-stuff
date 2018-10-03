@@ -34,38 +34,38 @@ CREATE Table Facts(
 	Rate_ID int references Rates(id),
 	TotalFilghtTime int);
 
-INSERT INTO Pilots VALUES (101, "John Wick", "Jr. Pilot", 19890-12-1);
-INSERT INTO Pilots VALUES (102, "Goro", "First Officer", 1990-12-11);
-INSERT INTO Pilots VALUES (103, "Sao Kahn", "Sr. Flight Engineer", 1987-11-10);
-INSERT INTO Pilots VALUES (104, "James H. Doolittle", "Captain", 1989-12-01);
-INSERT INTO Pilots VALUES (105, "Noel Wien", "Jr. Pilot", 1990-12-11);
-INSERT INTO Pilots VALUES (106, "Robert A. Hoover", "Second Officer", 1987-10-11);
-INSERT INTO Pilots VALUES (107, "Erich Hartmann", "Third Officer", 1989-01-12);
-INSERT INTO Pilots VALUES (108, "Charles E. Yeager", "Flight Engineer ", 1990-11-13);
-INSERT INTO Pilots VALUES (109, "Scott Crossfield", "Officer", 1987-10-11);
-INSERT INTO Pilots VALUES (110, "Anthony W. LeVier", "Navigator", 1989-01-12);
+INSERT INTO Pilots VALUES (101, "John Wick", "Jr. Pilot");
+INSERT INTO Pilots VALUES (102, "Goro", "First Officer");
+INSERT INTO Pilots VALUES (103, "Sao Kahn", "Sr. Flight Engineer");
+INSERT INTO Pilots VALUES (104, "James H. Doolittle", "Captain");
+INSERT INTO Pilots VALUES (105, "Noel Wien", "Jr. Pilot");
+INSERT INTO Pilots VALUES (106, "Robert A. Hoover", "Second Officer");
+INSERT INTO Pilots VALUES (107, "Erich Hartmann", "Third Officer");
+INSERT INTO Pilots VALUES (108, "Charles E. Yeager", "Flight Engineer ");
+INSERT INTO Pilots VALUES (109, "Scott Crossfield", "Officer");
+INSERT INTO Pilots VALUES (110, "Anthony W. LeVier", "Navigator");
 
-INSERT INTO Flights VALUES (201, "Pune", "New York", 2014-01-12);
-INSERT INTO Flights VALUES (202, "Mumbai", "Dubai", 2016-07-12);
-INSERT INTO Flights VALUES (203, "Dubai", "New York", 2016-11-09);
-INSERT INTO Flights VALUES (204, "Sydney", "London", 2014-01-12);
-INSERT INTO Flights VALUES (205, "Munich", "Berlin", 2016-07-12);
-INSERT INTO Flights VALUES (206, "Zurich", "Vladivostok", 2016-11-09);
-INSERT INTO Flights VALUES (207, "Brussels", "Paris", 2014-01-12);
-INSERT INTO Flights VALUES (208, "LA", "Hawaii", 2016-07-12);
-INSERT INTO Flights VALUES (209, "Madagascar", "Delhi", 2016-11-09);
-INSERT INTO Flights VALUES (210, "Amsterdam", "Toronto", 2014-01-12);
+INSERT INTO Flights VALUES (201, "Pune", "New York");
+INSERT INTO Flights VALUES (202, "Mumbai", "Dubai");
+INSERT INTO Flights VALUES (203, "Dubai", "New York");
+INSERT INTO Flights VALUES (204, "Sydney", "London");
+INSERT INTO Flights VALUES (205, "Munich", "Berlin");
+INSERT INTO Flights VALUES (206, "Zurich", "Vladivostok");
+INSERT INTO Flights VALUES (207, "Brussels", "Paris");
+INSERT INTO Flights VALUES (208, "LA", "Hawaii");
+INSERT INTO Flights VALUES (209, "Madagascar", "Delhi");
+INSERT INTO Flights VALUES (210, "Amsterdam", "Toronto");
 
-INSERT INTO Planes VALUES (301, "BS784", 2014-12-01, 65);
-INSERT INTO Planes VALUES (302, "WX234", 2016-07-08, 43);
-INSERT INTO Planes VALUES (303, "TR976", 2016-11-09, 54);
-INSERT INTO Planes VALUES (304, "DF32X", 2012-11-21, 96);
-INSERT INTO Planes VALUES (305, "RE865", 2015-01-13, 62);
-INSERT INTO Planes VALUES (306, "GL976", 2016-06-18, 53);
-INSERT INTO Planes VALUES (307, "BS7Y4", 2017-10-30, 72);
-INSERT INTO Planes VALUES (308, "RT234", 2013-06-08, 81);
-INSERT INTO Planes VALUES (309, "TX976", 2012-03-23, 66);
-INSERT INTO Planes VALUES (310, "SE724", 2014-05-14, 79);
+INSERT INTO Planes VALUES (301, "BS784", 65);
+INSERT INTO Planes VALUES (302, "WX234", 43);
+INSERT INTO Planes VALUES (303, "TR976", 54);
+INSERT INTO Planes VALUES (304, "DF32X", 96);
+INSERT INTO Planes VALUES (305, "RE865", 62);
+INSERT INTO Planes VALUES (306, "GL976", 53);
+INSERT INTO Planes VALUES (307, "BS7Y4", 72);
+INSERT INTO Planes VALUES (308, "RT234", 81);
+INSERT INTO Planes VALUES (309, "TX976", 66);
+INSERT INTO Planes VALUES (310, "SE724", 79);
 
 INSERT INTO Companies VALUES (401, "Singapore Airlines", 113);
 INSERT INTO Companies VALUES (402, "Qatar Airways", 143);
