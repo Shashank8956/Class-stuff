@@ -92,19 +92,11 @@ INSERT INTO Facts VALUES (109,205,305,406,501,2674);
 INSERT INTO Facts VALUES (110,209,306,402,503,3561);
 INSERT INTO Facts VALUES (103,210,307,410,504,2594);
 INSERT INTO Facts VALUES (102,203,308,401,502,2976);
-
 SELECT
-	P.Brand,
-	S.Country AS Countries,
-	SUM(F.Units_Sold)
-
-FROM Fact_Sales F
-INNER JOIN Dim_Date D    ON (F.Date_Id = D.Id)
-INNER JOIN Dim_Store S   ON (F.Store_Id = S.Id)
-INNER JOIN Dim_Product P ON (F.Product_Id = P.Id)
-
-WHERE D.Year = 1997 AND  P.Product_Category = 'tv'
-
-GROUP BY
-	P.Brand,
-	S.Country
+	P.name, P.Title, F.Dep, F.Arv, R.classtype
+FROM Facts
+	INNER JOIN Pilots P ON Facts.Pilot_Id = P.Id
+	INNER JOIN Flights F ON Facts.Flight_Id = F.Id
+	INNER JOIN Rates R ON Facts.Rate_Id = R.Id
+WHERE 
+	P.Name = 'John Wick' or P.name = 'James H. Doolittle';
