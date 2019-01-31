@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 letters1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
+cipher = ""
 matrix = [[],
           [],
           [],
@@ -55,15 +55,26 @@ def genKey():
 
 def encrypt(a, b):
     col1, col2, row1, row2 = 0,0,0,0
-    col1 = keymat.index(a)%5
-    col2 =  keymat.index(b)%5
-    print("Col ",col1, col2)
-    row1 = keymat.index(a)/5
-    row2 =  keymat.index(b)/5
-    print("Row ",row1, row2)
+    col1 = int(keymat.index(a)%5)
+    col2 =  int(keymat.index(b)%5)
+    #print("Col ",col1, col2)
+
+    row1 = int(keymat.index(a)/5)
+    row2 =  int(keymat.index(b)/5)
+    #print("Row ",row1, row2)
+
+    if (col1==col2) and (row1!=row2):           #Same Column
+        cipher = cipher + matrix[(row1+1)%5][col1] + matrix[(row2+1)%5][col1]
+    elif (col1!=col2) and (row1==row2):         #Same Row
+        cipher = cipher + matrix[row1][(col1+1)%5] + matrix[row1][(col2+1)%5]
+    elif (col1!=col2) and (row1!=row2):         #Rectangle
+        cipher = cipher + matrix[row2][col1] + matrix[row1][col2]
+    
+    
 def main():
     start()
     plainText = genKey()
     for i in range(1, len(plainText), 2):
         encrypt(plainText[i-1], plainText[i])
+    print(cipher)
 main()
